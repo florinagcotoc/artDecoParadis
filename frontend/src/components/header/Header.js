@@ -116,8 +116,8 @@ function Header() {
                                 <li className='menu-elements'><a href="/contact" style={{ color: currentPathname  === '/contact'? '#0C1020':<></>}}>CONTACT</a></li>
                             </ul>
                         </div>
+                        <div className="overlay"></div>
                     </label>
-                    <div class="overlay"></div>
                 </div>
             </div>
         </>
