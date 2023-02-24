@@ -160,9 +160,11 @@ li{
 }
   
 .menu-small-device{
-      position: fixed;
-      width: 100%;
-      border: none;
+    position: fixed;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-between;
 }
   
 .slide{
@@ -176,14 +178,14 @@ li{
     position: fixed;
     box-sizing: border-box;
     display: none;
+    z-index: 1;
 }
   
 h3{
     color: #009e60;
     font-weight: 800;
-    text-align: center;
     padding: 10px 0;
-    padding-right: 30px;
+    padding-left: 20px;
     pointer-events: none;
 }
   
@@ -191,7 +193,8 @@ h3{
     padding-right: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 10px 0 10px 20px;
 }
   
 .menu-elements a{
@@ -215,6 +218,7 @@ ul{
   
 .solid{
     width:99%;
+    opacity: 0.5;
 }
   
 input{
@@ -223,7 +227,7 @@ input{
 }
   
 .toggle{
-    margin-top: 20px;
+    margin-top: 34px;
     position: absolute;
     height: 30px;
     width: 30px;
@@ -231,7 +235,7 @@ input{
     background-color: whitesmoke;
     cursor: pointer;
     border-radius: 2px;
-    left: 10px;
+    left: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
   
@@ -291,6 +295,18 @@ input:checked ~ .overlay{
     opacity: 0.4;
 }
   
+.logo-hamburger-menu{
+    bottom: 0px;
+    position: relative;
+}
+
+.cart-hamburger-menu{
+    position: relative;
+    display: flex;
+    right: 20px;
+    /* margin-right: 20px; */
+    align-items: center;
+}
   
 @media screen and (max-width: 900px) {
     .main-menu {

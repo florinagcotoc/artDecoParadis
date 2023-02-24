@@ -9,7 +9,7 @@ function Header() {
             <nav className="main-menu">
                 <div className='menu-content'>
                     <div className='logo'>
-                        <img src="/images/art-logo.png" className='logo-app' alt="Art Deco Logo"/>
+                        <a href='/'><img src="/images/art-logo.png" className='logo-app' alt="Art Deco Logo"/></a>
                     </div>
                     <div className='left-menu'>
                         <ul className='elements-left-menu'>
@@ -114,10 +114,21 @@ function Header() {
                                 <li className='menu-elements'><a href="/despre-noi" style={{ color: currentPathname  === '/despre-noi'? '#0C1020':<></>}}>DESPRE NOI</a></li>
                                 <hr class="solid"></hr>
                                 <li className='menu-elements'><a href="/contact" style={{ color: currentPathname  === '/contact'? '#0C1020':<></>}}>CONTACT</a></li>
+                                <hr class="solid"></hr>
+                                <li className='menu-elements'><a href="/autentificare" style={{ color: currentPathname  === '/autentificare'? '#0C1020':<></>}}>AUTENTIFICARE</a></li>
+
                             </ul>
                         </div>
                         <div className="overlay"></div>
                     </label>
+                    <div className="logo-hamburger-menu">
+                        <a href='/'><img src="/images/art-logo.png" className='logo-app' alt="Art Deco Logo"/></a>
+                    </div>
+                    <div className='cart-hamburger-menu'>
+                        <a href="/cos-cumparaturi" style={{ color: currentPathname  === '/cos-cumparaturi'? '#0C1020':'#8e8f91', display:'flex'}}>
+                                <i className="fa-solid fa-cart-shopping fa-2xl"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
